@@ -19,4 +19,6 @@ from wcount import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('myhome/', views.home,name='home'),
+    path('aboutus/', views.aboutus,name='aboutus'),
+    path('hobbies/', views.hobbies,name='hobbies')
 ]
