@@ -2,8 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 import operator
 def home(requests):
-   return HttpResponse('<h1>This is my page</h1>')
+   return render(requests,'wcount/home.html',{'name':'SivaKumar'})
 def aboutus(requests):
-    return HttpResponse('<p><b>Name:</b> Siva Kumar<br><b>College:</b> Vasavi college of engineering<br><p>')
+   return render(requests,'wcount/about.html',{'userid':'SivaKumar2000'})
 def hobbies(requests):
-    return HttpResponse('<ul><li>Reading books</li><li>browsing net</li><li>playing cricket</li><li>playing online game</li></ul>') 
+   return render(requests,'wcount/hobbies.html')
